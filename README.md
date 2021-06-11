@@ -10,8 +10,8 @@ cargo install --git https://github.com/mass10/ruuidgen --branch main
 
 # NOTE
 
-You may find `uuidgen.exe` command in Windows in such path below. or else, remind to install ruuidgen!
+You may find `uuidgen.exe` command in Windows in such path below. or else, remind to install `ruuidgen`!
 
-```
+```CMD
 C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64\uuidgen.exe
 ```
