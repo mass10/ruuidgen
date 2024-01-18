@@ -5,7 +5,8 @@
 extern crate uuid;
 
 fn main() {
-    
-    let uuid = uuid::Uuid::new_v4();
+
+	// That's all!
+	let uuid = uuid::Uuid::new_v4();
 	println!("{}", uuid);
 }
