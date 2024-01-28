@@ -1,17 +1,31 @@
-# ABOUT
+# About
 
-uuigen command for anywhere. It's name is `ruuidgen`.
+uuidgen command for anywhere named.
 
-# GETTING STARTED
+# Getting Started
 
 ```COMMAND
 cargo install --git https://github.com/mass10/ruuidgen --branch main
 ```
 
-# NOTE
+# Alternatives
 
-You may find `uuidgen.exe` in Windows in such path below. If not, please remeber to install `ruuidgen`!
+1. Native uuidgen for Windows.
+
+You may find `uuidgen.exe` in Windows in such path below.
 
 ```CMD
-C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64\uuidgen.exe
+"C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64\uuidgen.exe"
+```
+
+2. Native uuidgen in WSL.
+
+```CMD
+wsl.exe uuidgen
+```
+
+3. PowerShell
+
+```CMD
+powershell.exe [Guid]::NewGuid().ToString()
 ```
