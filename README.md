@@ -1,6 +1,6 @@
 # 概要
 
-uuidgen が無い環境向けの uuidgen
+uuidgen が無い環境向けに手っ取り早く uuidgen が欲しいとき用
 
 # 始め方
 
