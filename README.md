@@ -1,16 +1,16 @@
-# About
+# 概要
 
-uuidgen command for anywhere named.
+uuidgen が無い環境向けの uuidgen
 
-# Getting Started
+# 始め方
 
 ```COMMAND
 cargo install --git https://github.com/mass10/ruuidgen --branch main
 ```
 
-# Alternatives
+# 通常は
 
-1. Native uuidgen for Windows.
+* Windows 環境で開発向け SDK がインストールされている場合
 
 You may find `uuidgen.exe` in Windows in such path below.
 
@@ -18,13 +18,13 @@ You may find `uuidgen.exe` in Windows in such path below.
 "C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64\uuidgen.exe"
 ```
 
-2. Native uuidgen in WSL.
+* WSL が使える場合
 
 ```CMD
 wsl.exe uuidgen
 ```
 
-3. PowerShell
+* PowerShell が使える場合
 
 ```CMD
 powershell.exe [Guid]::NewGuid().ToString()
