@@ -17,12 +17,6 @@ jobs:
             # "write" permission is required to create a release. (NO NEED to grant at repository settings.)
             contents: write
         steps:
-            # ========== CHECKOUT REPOSITORY ==========
-          - name: Checkout
-            uses: actions/checkout@v3
-            with:
-                fetch-depth: 1
-
             # ========== DOWNLOAD ARTIFACTS ==========
           - name: Download artifacts
             uses: actions/download-artifact@v4
@@ -41,7 +35,7 @@ jobs:
                 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
                 $timestamp_full = Get-Date -Format "yyyy-MM-dd HH:mm:ss K"
 
-                gh.exe release create "build-$timestamp" --title "release, $timestamp_full" --generate-notes uuidgen uuidgen.exe
+                gh.exe release create "build-$timestamp" --title "release, $timestamp_full" --generate-notes ruuidgen ruuidgen.exe
             env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
