@@ -38,6 +38,8 @@ jobs:
             # ========== CREATE RELEASE AND UPLOAD EXECUTABLE FILE ==========
           - name: Create release
             run: |
+                Set-TimeZone -Id "Tokyo Standard Time"
+
                 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
                 $timestamp_full = Get-Date -Format "yyyy-MM-dd HH:mm:ss K"
 
