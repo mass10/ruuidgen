@@ -4,6 +4,10 @@ uuidgen が無い環境向けの uuidgen
 
 # 始め方
 
+* [releases](https://github.com/mass10/ruuidgen/releases) から単一バイナリファイルをダウンロードできます。
+
+* cargo install が利用できるなら
+
 ```COMMAND
 cargo install --git https://github.com/mass10/ruuidgen --branch main
 ```
